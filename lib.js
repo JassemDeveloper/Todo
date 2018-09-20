@@ -488,29 +488,4 @@ function updateTask(id) {
     } else {
         alert('Task Name is empty');
     }
-
 }
-var obj1 = {
-	
-	fullName:function(firstName,lastName){
-		return  lastName + ","+ firstName;
-	}
-};
-
-var obj={
-	firstName:"Jassem",
-	lastName:"Alhijjab",
-	fullName:function(){
-		return this.lastName +" " + this.lastName;
-	}
-};
-
-let usingApply=obj1.fullName.apply(null,["Jassem","Alhijjab"]);
-let usingCall=obj1.fullName.call(null,"Jassem","Alhijjab");
-let getFullName=obj.fullName;
-let usingBind=getFullName.bind(obj);
-
-console.log(usingApply);
-console.log(usingCall);
-console.log(usingBind());
-
